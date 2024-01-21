@@ -1,7 +1,7 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 Config = {
     Inv = "qb", -- qb(=lj) or ox [Inventory system]
-    webhook = "", -- Add Discord webhook
+    webhook = "https://discord.com/api/webhooks/1058270219300249692/qF53TBtE_lZdodNttIjfMOUYBEsYsHY0Z_R7Oo03tJ1BVChwdQvpy7EXIJqUgAsSIka8", -- Add Discord webhook
     UsePsMDT = false,
 }
 local function ConfigInvInvalid()
