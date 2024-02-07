@@ -185,6 +185,7 @@ function CameraLoop()
                     if cameraprop then DeleteEntity(cameraprop) end
                     ClearPedTasks(lPed)
                     TriggerServerEvent("ps-camera:CreatePhoto", json.encode(image.attachments[1].proxy_url))
+                    TriggerEvent('wais:addmissionxp:createphoto', 1) --added by pamela for wais battlepass
 					SendNUIMessage({action = "SavePic", pic = json.encode(image.attachments[1].proxy_url)})
                     SendNUIMessage({action = "hideOverlay"})
                 end)
